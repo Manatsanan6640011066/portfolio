@@ -1,0 +1,117 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d3b2e;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 50px 20px;
+    /* เปลี่ยนเป็นภาพที่ต้องการ */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 100px;
+    background-image: url('https://s359.kapook.com//pagebuilder/8666b384-37c7-48ab-8288-a230ba1269a8.jpg');
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #d1d5db;
+}
+
+/* MENU SECTION */
+.menu {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.menu-item {
+    margin: 20px 0;
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.menu-item span {
+    color: gold;
+    font-weight: bold;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #ccc;
+}

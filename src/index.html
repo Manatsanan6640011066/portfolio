@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webportfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    
+
+    <header class="bg-[#1E293B] text-white py-4 text-2xl">
+        <div class="container mx-auto flex justify-between items-center px-6">
+    
+            <div class="flex items-center space-x-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Prince_of_Songkla_University_Emblem.svg/800px-Prince_of_Songkla_University_Emblem.svg.png" alt="" class="w-8 h-19 rounded-full">
+                <div class="text-lg md:text-2xl font-bold">P R O F I L E</div>
+            </div>
+    
+            <!-- Hamburger Menu Button (เฉพาะจอเล็ก) -->
+            <button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">
+                ☰
+            </button>
+    
+            <!-- เมนูหลัก -->
+            <nav id="nav-menu" class="hidden md:flex space-x-6 text-xl">
+                <a href="#HOME" class="hover:text-yellow-400">HOME</a>
+                <a href="#PREFACE" class="hover:text-yellow-400">PREFACE</a>
+                <a href="#PROFILE" class="hover:text-yellow-400">PROFILE</a>
+                <a href="#EDUCATION" class="hover:text-yellow-400">EDUCATION</a>
+                <a href="#CENTICATION" class="hover:text-yellow-400">CENTICATION</a>
+                <a href="#PROJECTS" class="hover:text-yellow-400">PROJECTS</a>
+                <a href="#CONTACT" class="hover:text-yellow-400">CONTACT</a>
+            </nav>
+            
+            <a href="#CONTACT" class="hidden md:block bg-yellow-500 text-white px-4 py-2 rounded-md text-xl">CONTACT</a>
+        </div>
+    </header>
+    
+    <script>
+        // ฟังก์ชันเปิด/ปิดเมนู
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("hidden");
+        });
+    </script> 
+    
+    
+    
+
+    <!-- Hero Section -->
+    <section class="relative bg-[#111827] text-white py-20 text-center text-xl"
+    style="background-image: url('https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/481996269_1876010662803616_5001952647969132053_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEGc_shZq9G_NUqf_OpMkiQE5EN6ZszcuYTkQ3pmzNy5pbXto8PbpKUtfmf2SWynNSVPD_oBYPfPTVGnWb0WfBk&_nc_ohc=_NyyQ5t5evgQ7kNvgGfclEm&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AcEtB7Dl3tFfuz5zXdKFJ6J&oh=00_AYE9e4ASAmnqF-_ne2AborqmV9PhnNV8IVt-7Ic3IxzYUw&oe=67D86750'); background-size: cover; background-position: center;">
+
+    <div class="bg-black/50 p-6 md:p-10 rounded-md">
+        <h1 id="HOME" class="text-3xl md:text-4xl font-bold">Welcome to my website</h1>
+        <p class="mt-4 text-gray-300 text-lg md:text-xl">“  เว็บไซต์นี้เป็นพอร์ตโฟลิโอของฉัน ซึ่งรวบรวมทักษะและผลงานด้านการออกแบบและพัฒนาเว็บไซต์ จัดทำขึ้นเป็นส่วนหนึ่งของรายวิชา 934-026 Web Programming โดยได้รับการพัฒนาในระหว่างการศึกษา หวังว่าเนื้อหาในเว็บไซต์นี้จะเป็นประโยชน์ในการพิจารณาผลงานของฉัน ขอบคุณที่เข้ามาชมค่ะ  ”</p>
+        
+    </div>
+</section>
+
+ 
+
+    <!-- About Us -->
+    <section id="PREFACE" class="bg-white py-16">
+        <div class="container mx-auto grid md:grid-cols-2 gap-6 px-6">
+            <div class="relative">
+                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/481244263_1869092853495397_4832734835895679579_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF3svuE1pR3aaYPfn-JQ0qJXe8Lr9fkBxZd7wuv1-QHFjJWhlGKc7JSqgr2WPwuumNfgN3wRKA90QHuT2YtWA5Z&_nc_ohc=UxI_QXvFQIcQ7kNvgHtIfvH&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AWZRjx_u1wl-uTIJMA_sFfC&oh=00_AYGyNr33K_Eq1wqLONfTQNNnaw0ddHKPrUTzErsooS7reQ&oe=67D84C9E" alt="Lawyer" class="rounded-md shadow-lg">
+                <p class="absolute bottom-4 left-4 bg-black text-white px-4 py-2 rounded-md">Manatsanan anantanarong</p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800">P R E F A C E 📝</h2> 
+                <p class="mt-4 text-gray-700 text-xl">“สวัสดีค่ะ ฉันชื่อ มนัสนันท์ อนันตณรงค์ กำลังศึกษาอยู่ที่ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี
+                     สาขา เทคโนโลยีสารสนเทศ</p>
+                <p class="mt-2 text-gray-700 text-xl"> ฉันมีความสนใจด้าน การพัฒนาเว็บไซต์ และมีทักษะด้านการออกแบบในระดับหนึ่ง ตลอดระยะเวลาการเรียน ฉันได้พัฒนาทักษะด้าน การออกแบบและการสร้างเว็บไซต์ และเคยมีประสบการณ์ ออกแบบพอร์ตโฟลิโอเพื่อยื่นเข้าศึกษาต่อระดับมหาวิทยาลัย</p> 
+
+                <p class="mt-2 text-gray-700 text-xl"> ฉันมุ่งมั่นที่จะพัฒนาตัวเองในด้าน การออกแบบและพัฒนาเว็บไซต์ และหวังว่าจะได้นำความสามารถที่มีไปใช้ให้เกิดประโยชน์ต่อองค์กรของฉันในอนาคต"</p> 
+                
+
+                <p id="PROFILE" class="mt-5 font-bold text-3xl text-gray-800">P R O F I L E 👩‍💻</p> 
+                <p class="text-gray-700 text-xl">ชื่อ-นามสกุล: มนัสนันท์ อนันตณรงค์ <br>
+                วันเกิด: 21 มีนาคม 2548 <br>
+                การศึกษา: ระดับปริญญาตรี ชั้นปีที่ 2 สาขาเทคโนโลยีสารสนเทศ <br>
+                สถานศึกษา: มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี <br> <br>
+                ความสนใจ: การออกแบบและพัฒนาเว็บไซต์ <br>
+                ทักษะ: การใช้โปรแกรม Canva, Figma, HTML & CSS <br>
+                ความสามารถพิเศษ: การเขียนโค้ด HTML/CSS, ออกแบบ UX/UI เบื้องต้น <br> <br> 
+                ประสบการณ์:ออกแบบพอร์ตโฟลิโอเพื่อยื่นเข้าศึกษาต่อระดับมหาวิทยาลัย <br>
+                เป้าหมาย:การเป็นนักออกแบบและพัฒนาเว็บไซต์ <br></p>
+            </div>
+        </div>
+    </section>
+
+    <body class=" text-gray-800">
+        <div id="EDUCATION" class="container mx-auto py-12 px-6 ">
+            <h2 class="text-3xl font-bold text-center mb-8">E D U C A T I O N A L 📚</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Web Design -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <div class="text-gray-600 text-4xl mb-4">📘</div>
+                    <h3 class="text-2xl font-semibold mb-2">มัธยมศึกษาตอนต้น</h3>
+                    <p class="text-gray-500 text-xl">โรงเรียนมัธยมพัชรกิติยาภา ๓ สุราษฎร์ธานี</p>
+                </div>
+    
+                <!-- Branding -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <div class="text-gray-600 text-4xl mb-4">📖</div>
+                    <h3 class="text-2xl font-semibold mb-2">มัธยมศึกษาตอนปลาย</h3>
+                    <p class="text-gray-500 text-xl">โรงเรียนมัธยมพัชรกิติยาภา ๓ สุราษฎร์ธานี</p>
+                </div>
+    
+                <!-- Development -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <div class="text-gray-600 text-4xl mb-4">🎓</div>
+                    <h3 class="text-2xl font-semibold mb-2">อุดมศึกษา</h3>
+                    <p class="text-gray-500 text-xl">มหาวิทยาลัยสงขลานครินทร์ <br>วิทยาเขต สุราษฎร์ธานี </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white py-10"></div>
+
+
+    </body>
+
+    <body class="text-gray-800 ">
+        <div  id="CENTICATION" class="container mx-auto py-12 px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">C E R T I F I C A T I O N 🏆🏅</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold mb-2">ได้เข้าร่วมหลักสูตร Cybersecurity Awarenessการสร้างความตระหนักรู้ด้านความมั่นคงทางไซเบอร์</h3>
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/481224975_1869092896828726_6158694283832801578_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHrW3O5A8-Ti-hvkFgO9m2K5Z-_LmR3P47ln78uZHc_jollcg3tBFDX-RORXrv2kyGDGMIkFcg0UB_wcKAucRFH&_nc_ohc=VT0XWNsFHoAQ7kNvgG22bp2&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AzLC8dC5PAwOMy6rUXCJdWo&oh=00_AYFuyVZpHPTrF1OiDdpt8dM_T2aD423lMpPXR4ZQ2wb9bQ&oe=67D853AF" alt="Cybersecurity" class="w-full h-50 object-cover rounded-lg mb-4">
+                    
+                </div>
+    
+                <!-- 2-->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <div class="text-2xl font-semibold mb-2">ได้เข้าร่วมหลักสูตร Al Literacy <br> เพื่อการประยุกต์และพัฒนาเทคโนโลยีปัญญาประดิษฐ์  </h3></div>
+                    <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/480801377_1869094920161857_7650376581021062477_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFQcdpCi-O7R21gFInj76g-L16bvYkAe2UvXpu9iQB7ZSr54rehnPiYmFHU9wCY_ICLBPEibMr3ytG70jYOJm1v&_nc_ohc=vEgZdIQxhskQ7kNvgG1uD1w&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AgNm5e-CqSbR8by755-vdKB&oh=00_AYG_uLBGGrDrxaPL47F1tOqAhscVuKg_6EkD9xLudRadSw&oe=67D869FC" alt="ปัญญาปะดิษฐ์" class="w-full h-50 object-cover rounded-lg mb-4">
+                   
+                </div>
+    
+                <!-- อุดมศึกษา -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-semibold mb-2">ได้เข้าร่วมหลักสูตร การนำเทคโนโลยี AI และการวิเคราะห์ข้อมูลมาใช้ <br> โอกาสและความท้าทาย</h3>
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/480955114_1869094910161858_3133631504608387834_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFFq-BRMIxv-vIjk8vufL83KoY_Eo-6uo4qhj8Sj7q6johAP0s4NsW3nkyso45sd1ruZaHOPddCrVqPZQrsKicf&_nc_ohc=A3s98o6PLssQ7kNvgHv47rP&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AOPpMm-tr8ZYs0ZuUFIFOrw&oh=00_AYG25HjfNNW2pK2BX946ZoW798ZsQCfKycskYipyUfZlHg&oe=67D86113" alt="อุดมศึกษา" class="w-full h-50 object-cover rounded-lg mb-4">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    </html>
+
+    <div class="bg-white py-10"></div>
+
+            </div>
+        </div>
+    </body>
+    
+    </html>
+
+
+
+    <div class="text-gray-800 ">
+        <div  id="PROJECTS" class="container mx-auto py-12 px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">P R O J E C T S📃</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/480939190_1869637503440932_4319964738127537775_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGk8s-tEtI2tbEM4itk0-Y2LvBp5xFsN5gu8GnnEWw3mEMAoqFCuTUPESARGdroU4Us7txoYqh7qXHetxpEaFIF&_nc_ohc=kpuTEzD7-NMQ7kNvgEvpVnI&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=ASSee1VujsIIV0iHyk5a0jB&oh=00_AYEIOVi7qmI33k2ZRCY9YyX8pFThwBH5771OfEwmD6NXzA&oe=67D858C5" alt="1" class="w-full h-50 object-cover rounded-lg mb-4">
+                    <ol class="text-2xl font-semibold mb-2"><a href="../EXERCISES/Basic.html"
+                        class="mt-4 block text-center bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Basic html</a></ol>
+                    
+                    
+                </div>
+
+    
+                <!-- 2 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/480913970_1869419253462757_1190588667423344266_n.jpg?stp=cp6_dst-jpg_p180x540_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGncs4WCo0CtPRgJBebr5-BtHHJutbsfK20ccm61ux8rS6AWxJjdbAaqwBGJaINGreUDDWPrDblXcw05gBabaQB&_nc_ohc=wdTJGK23zqQQ7kNvgFdB9lM&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AciuaImh64o0t41ZeUi0qGc&oh=00_AYHdQID7ZZMyJu9Bi0_LN7PwVGOGR_hl2HBtnmyrJaVxMQ&oe=67D878C3" alt="2" class="w-full h-50 object-cover rounded-lg mb-4">
+                    <ol class="text-2xl font-semibold mb-2"><a href="../EXERCISES/From.html"
+                        class="mt-4 block text-center bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        From</a></ol>
+                    
+                    
+                </div>
+
+                <!-- 3 -->
+                <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/481074722_1869392950132054_4384503807461903378_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF4ZIQjAlx9Q7bzt_5kCXRax1RQWChacf7HVFBYKFpx_gSczHDRx_S3fS_lZ38pLx6yj33V-PXGYtTje8sxS5p6&_nc_ohc=IsbEnnZkO3oQ7kNvgEAnnDI&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AgAQH3TOJdow4q8mtdbV3q0&oh=00_AYGiL-CY4dZJ3ZqQRdBUauF9pt995xbluT74RvoKhXSnEA&oe=67D85B9E" alt="3" class="w-full h-50 object-cover rounded-lg mb-4">
+                    <ol class="text-2xl font-semibold mb-2"><a href="../EXERCISES/Box model.html"
+                        class="mt-4 block text-center bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Box Model</a></ol>
+                    
+                    
+                </div>
+
+                 <!-- 4 -->
+                 <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/480957750_1869423600128989_1885513867098432894_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGTGSXCsY5xJP5oDMpjgFoO6v3cmvyE_ZPq_dya_IT9k_dFzxJyL_eGF4LwZ7WAXxwFmfSkjFj3czHqwcK0nuJd&_nc_ohc=aE-pi7ESVWgQ7kNvgFlMDQY&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AnVyTFIBfDR08G0_xMTSyOg&oh=00_AYElGsB51Krv5MVmmpE42RRXf7_6KciumUDc5UrdaD2-JA&oe=67D864B1" alt="4" class="w-full h-50 object-cover rounded-lg mb-4">
+                    <ol class="text-2xl font-semibold mb-2"><a href="../EXERCISES/Pagelayoout.html"
+                        class="mt-4 block text-center bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Page layout</a></ol>
+                    
+                    
+                </div>
+
+
+                 <!-- 5 -->
+                 <div class="bg-white shadow-lg p-6 rounded-lg text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/481189196_1869418223462860_2877918825441678811_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHTVdpEOUgxPOyP7wHCTAXxxeVz2C9xdIXF5XPYL3F0hSq4tX70Z8VgkFOKa5zuhGANjNsEeiZ8pihqsBX3ohHv&_nc_ohc=884zSAgjos0Q7kNvgHfvJrK&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A5mtNHvxnWDi3g-N9cULnsM&oh=00_AYE5MIdtvT3NYnrHhVje8sLHjhBdoKHRQU3U17mHrz6gxA&oe=67D861A4" alt="" class="w-full h-50 object-cover rounded-lg mb-4">
+                    <ol class="text-2xl font-semibold mb-2"><a href="../EXERCISES/Formvalidation.html"
+                        class="mt-4 block text-center bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        From Validation</a></ol>
+                    
+                    
+                </div>
+
+            </div> 
+        </div>    
+        
+    </html>
+    
+    
+    <div class="bg-[#1E293B] py-10"></div>
+   <!-- Practice Areas -->
+   <section id="Contact" class="bg-[#ffffff] text-white py-16">
+        
+       
+    <div class="container mx-auto text-center">
+        
+        <h2 class="text-3xl font-bold text-black">C O N T A C T📧</h2>
+        <div class="mt-10 grid md:grid-cols-3 gap-6 px-6">
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                   <span>🏘ADDRESS</span>
+                </h3>
+                <p class="text-gray-300 mt-2 text-xl">123/45  ตำบลบางใหญ่, อำเภอบางใหญ่ 
+                    จังหวัดสุราษฎร์ธานี 84000, ประเทศไทย</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                    <span>✉ EMAIL</span>
+                </h3>
+                <p class="text-gray-300 mt-2 text-xl">6640011066@psu.ac.th</p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                    <span>📞PHONENUMBER</span>
+                </h3>
+                <p class="text-gray-300 mt-2 text-xl">0953318033</p>
+            </div>
+
+            <a href="https://www.facebook.com/share/1Bhpydib4D/?mibextid=wwXIfr" target="_blank" class="block">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                        <img src="pic9.png" alt="" class="w-10 h-10 rounded-full">
+                        <span>FACEBOOK</span>
+                    </h3>
+                    <p class="text-gray-300 mt-2 text-xl">แพม ม.</p>
+                </div>
+            </a>
+
+            
+            <a href="https://line.me/ti/p/FhVzg9f7bz" target="_blank" class="block">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                        <img src="pic8.png" alt="" class="w-10 h-10 rounded-full">
+                        <span>LINE</span>
+                    </h3>
+                    <p class="text-gray-300 mt-2 text-xl">ID :pamaun9978</p>
+                </div>
+            </a>
+            
+        
+            
+            <a href="https://www.instagram.com/pam_m18481?igsh=MTBsejFiYjkxN2Ntbg%3D%3D&utm_source=qr" target="_blank" class="block">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold inline-flex items-center space-x-2">
+                        <img src="pic7.png" alt="" class="w-10 h-10 rounded-full">
+                        <span>INSTAGRAM</span>
+                    </h3>
+                    <p class="text-gray-300 mt-2 text-xl">pam_m18481</p>
+                </div>
+            </a>
+            
+
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- (ล่าง) -->
+<section class="bg-[#1E293B] text-white py-16 flex justify-center items-center">
+    <button id="back-to-top" class="text-white text-xl font-bold py-2 px-4 border border-white rounded-lg hover:bg-white hover:text-[#1E293B] transition duration-300">
+        กลับขึ้นสู่ด้านบน
+    </button>
+</section>
+
+<script>
+    document.getElementById("back-to-top").addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+</script>
+
+
+</body>
+</html>
